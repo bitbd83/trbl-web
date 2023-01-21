@@ -19,46 +19,47 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet" crossorigin>
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-  
-  <script>
+
+
+
+</head>
+
+<body>
+  <script crossorigin>
     var chatbox = document.getElementById('fb-customer-chat');
     chatbox.setAttribute("page_id", "110898687930923");
     chatbox.setAttribute("attribution", "biz_inbox");
   </script>
 
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        xfbml            : true,
-        version          : 'v15.0'
-      });
-    };
 
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
-</head>
-
-<body>
   <!-- Messenger Chat Plugin Code -->
     <div id="fb-root"></div>
 
     <!-- Your Chat Plugin code -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
+    <!-- Your SDK code -->
+    <script crossorigin>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
 
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 
   <div class="hero_area">
@@ -665,12 +666,12 @@
         <div class="col-md-6 px-0">
           <div class="map_container">
             <div class="map-responsive">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.8112174956814!2d90.25072971517389!3d23.86083649046484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755e92634b3d875%3A0xf5aee76b66b3032d!2sTRBL%20Lake%20View!5e0!3m2!1sen!2sus!4v1674215341721!5m2!1sen!2sus" width="100%" height="100%" style="border:0; margin-left:16px; margin-top:16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.8112174956814!2d90.25072971517389!3d23.86083649046484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755e92634b3d875%3A0xf5aee76b66b3032d!2sTRBL%20Lake%20View!5e0!3m2!1sen!2sus!4v1674215341721!5m2!1sen!2sus" width="100%" height="100%" style="border:0; margin-left:16px; margin-top:16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" crossorigin></iframe></div>
           </div>
         </div>
         <div class="col-lg-4 col-md-5 ">
           <div class="form_container">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc43zQOj_tt2-vRycBdoRFLIR3IPuW_TjENMNmT9NnxWVx_Ug/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc43zQOj_tt2-vRycBdoRFLIR3IPuW_TjENMNmT9NnxWVx_Ug/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0" crossorigin>Loading…</iframe>
           </div>
         </div>
 
@@ -815,9 +816,9 @@
   <!-- end  footer section -->
 
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js" crossorigin></script>
+  <script type="text/javascript" src="js/bootstrap.js" crossorigin></script>
+  <script type="text/javascript" src="js/custom.js" crossorigin></script>
 
 
 </body>
